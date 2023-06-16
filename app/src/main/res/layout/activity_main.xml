@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFDDE"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_calculator"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        style="@android:style/TextAppearance.Material.Headline"
+        android:padding="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/height"
+            android:textColor="@color/material_dynamic_primary40"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Material.Body1"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heightPicker"
+            android:layout_marginHorizontal="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cm"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Material.Body1"/>
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/weight"
+            android:textColor="@color/material_dynamic_primary40"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Material.Body1"/>
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weightPicker"
+            android:layout_marginHorizontal="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kg"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Material.Body1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text = "@string/Submit"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultsTV"
+        android:padding="20dp"
+        style="@android:style/TextAppearance.Material.Headline"/>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "@string/considered"
+                android:padding="5dp"
+                style="@android:style/TextAppearance.Material.Headline"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageTV"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:padding="10dp"
+                style="@android:style/TextAppearance.Material.Headline"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
